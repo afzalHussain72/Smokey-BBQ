@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: #1877f2;
+    margin: 0;
+    padding-top: 15px;
+    font-family: 'Comforter', 'cursive';
+    }
+.navigation{
+    background-color: rgb(190, 129, 129);
+    display: grid;
+    align-items:start;
+    justify-items: center;
+    
+    }
+.navigation ul{
+    list-style-type: none; /*Tthis is to remove dots  */
+   }    
+.navigation ul a{
+    display:inline-block;/*content side by side visible*/
+    padding: 20px;
+    text-decoration: none;  /* This used to remove underlin*/
+    font-family: serif 'Times New Roman', Times, serif Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin-left: 50px;
+    transition: 0.2% ease-in;
+    color: #000;
+    }
+a:hover{
+background-color: beige;
+color:gray;
+}
+.images{
+    
+    width:100%;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 20px;
+    
+    
+}
+ .images:hover{
+    transform: scale(1.04);
+    transition: 0.2s ease;
+}
+  
+
+.item{
+    display: inline-block;
+    margin-top: 20px;;
+    /*order-bottom: 0.5px solid #787878;*/
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    width: 30%;
+    padding-left: 30px;
+
+}
+
+.text{
+    text-align: center;
+    padding-right: 70px;
+}
+
+.item button{
+    background-color: rgb(235, 9, 9);
+    border-radius: 5px;
+    font-size:17px ;
+    color:white;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.item button:hover{
+  transform: scale(1.04);
+  transition: 0.2s ease;
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    .item{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (max-width: 768px) {
+    .item{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
